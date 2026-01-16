@@ -1,0 +1,9 @@
+Fullname = str("Rhudd Lawrence D. Cagatan")
+Age = int(19)
+Height = float(1.7)
+Student = bool(True)
+
+print("Fullname:", Fullname)
+print("Age:", Age)
+print("Height:", Height)
+print("Student:", Student)
