@@ -1,0 +1,7 @@
+Name = str("Jollibee")
+Age = int(46)
+Restaurant = bool(True)
+
+print(Name, type(Name))
+print(Age, type(Age))
+print("Is Jollibee a Restaurant?", Restaurant, type(Restaurant))
