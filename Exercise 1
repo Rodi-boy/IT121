@@ -1,0 +1,13 @@
+School = "USTP - SHS"
+
+def SHSSchool():
+  print("My previous school is " + School)
+
+def NewSchool():
+  global School
+  School = "USTP - CITC"
+  print("My new school is " + School)
+
+SHSSchool()
+print()
+NewSchool()
