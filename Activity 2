@@ -1,0 +1,18 @@
+# Part 1
+quiz = float(input("Input Student Quiz Average: "))
+lab = float(input("Input Student Lab Average: "))
+midterm = float(input("Input Student Midterm Exam: "))
+final_exam = float(input("Input Student Final Exam: "))
+
+final_grade = (quiz * 0.20) + (lab * 0.30) + (midterm * 0.20) + (final_exam * 0.30)
+print()
+print("Student's Final Grade is ", float(final_grade))
+
+# Part 2
+print("Is the student eligible for honors? ", final_grade >= 90 and midterm >= 80 and final_exam >= 80)
+
+# Part 3
+print((quiz + lab) / 2 > midterm)
+print(final_exam >= midterm)
+print(quiz != lab)
+print(not(final_exam < 75))
