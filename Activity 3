@@ -1,0 +1,26 @@
+delivery_fee = 50
+
+def process_order(order_amount):
+    branch_discount = 20
+    def apply_discount():
+        nonlocal branch_discount
+        global delivery_fee
+        branch_discount += 10
+        delivery_fee += 5
+        print("Updated Delivery Fee: ", delivery_fee)
+        print("Updated Branch Discount: ", branch_discount)
+        return (order_amount - branch_discount) + delivery_fee
+        
+    print("Final Bill: ", apply_discount())
+
+while True:
+    try:
+        order_amount = int(input("\nOrder Amount: "))
+        process_order(order_amount)
+        again = input("\nAnother Transaction (yes/no)? ")
+        if again == "no":
+            print("\nThank you for the smooth translation!")
+            break
+    
+    except ValueError:
+        print("Input Number Only")
