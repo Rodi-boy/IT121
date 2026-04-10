@@ -1,0 +1,19 @@
+student_name = input("Enter Student Name: ")
+
+try:
+    student_score = int(input("Enter Student Score (0-100): "))
+    if 0 <= student_score <= 100:
+        print("\nStudent:", student_name)
+        print("Score:", student_score)
+        if student_score >= 75:
+            print("Pass")
+        else:
+            print("Fail")
+    else:
+        print("Error: Score must Range from 0-100.")
+
+except ValueError:
+    print("Error: Enter 0-100 Whole Number only.")
+
+finally:
+    print("End of Program.")
